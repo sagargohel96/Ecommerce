@@ -4,15 +4,16 @@ Array.from(buttons).forEach((button) => {
     product();
   });
 });
+
 function product() {
   const price = document.querySelector("#price").innerText.slice(1, 3);
   const img = document.querySelector("#img").src;
   const productName = document.querySelector("#itemName").innerText;
-  const productDetails = {
+  var productDetails = {
     productVal: `${price}`,
     imgUrl: `${img}`,
     productNam: `${productName}`,
   };
-
-  console.log(productDetails);
 }
+var pname = document.querySelector(".product-name");
+console.log(pname);

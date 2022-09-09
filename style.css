@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Open+Sans:wght@500&family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Op  en+Sans:wght@500&family=Poppins&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Combo&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -162,9 +163,9 @@ body {
   transition: 0.3 ease;
 }
 /* product section  */
-/* #product1 {
-  text-align: center;
-} */
+#product1 {
+  margin-top: 20px;
+}
 .pro-container {
   padding: 30px;
   display: grid;
@@ -212,4 +213,199 @@ body {
 }
 .star {
   color: burlywood;
+}
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/bnrtxt.jpg");
+  background-position: center;
+  height: 300px;
+  width: 100%;
+}
+#banner h4,
+#banner h2 {
+  color: #e3e6f3;
+  padding-top: 20px;
+}
+#bnrtxt {
+  color: greenyellow;
+}
+#sm-banner {
+  display: grid;
+  grid-template-columns: repeat(2, 45vw);
+  grid-template-rows: repeat(1, 400px);
+  grid-gap: 30px;
+  margin: 35px;
+}
+.banner-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 80px;
+  justify-content: center;
+}
+.banner-box:nth-child(1) {
+  background-image: url("img/bnrbx.jpg ");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-box:nth-child(2) {
+  background-image: url("img/bnrbx2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-box:nth-child(2) button {
+  background-color: black;
+  color: white;
+  border: whitesmoke;
+}
+
+.banner-box h4 {
+  color: #2f3835;
+}
+.banner-box h2 {
+  font-weight: 700;
+}
+.banner-box button {
+  height: 30px;
+  background-color: #0417252d;
+  border-radius: 2px;
+  border: none;
+  color: black;
+  box-shadow: 2px 2px rgb(167, 159, 159);
+  height: 20px;
+  width: 100px;
+  margin-top: 15px;
+}
+.banner-box button:hover {
+  box-shadow: 4px 4px rgba(167, 159, 159, 0.263);
+  background-color: #3da477a5;
+  color: aliceblue;
+}
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-image: url("img/contact.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.newstext h2,
+.newstext p {
+  color: #d0d5dc;
+}
+.form {
+  display: flex;
+}
+.form input {
+  width: 25vw;
+  padding: 10px;
+}
+.form button {
+  width: 10vw;
+  padding: 10px;
+}
+#footer .contact {
+  font-family: "Combo", cursive !important;
+}
+.contact p {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.contact p span {
+  font-weight: 100;
+  color: #808080;
+}
+.contact ul {
+  display: flex;
+}
+.contact ul li {
+  padding: 3px;
+  list-style: none;
+}
+#footer {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.buttons {
+  display: flex;
+}
+.buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+.btn p {
+  margin: 0;
+}
+.btn {
+  margin: 5px;
+}
+.buttons i {
+  margin: 2px;
+}
+.social ul li {
+  list-style: none;
+}
+.social ul {
+  display: flex;
+}
+.social ul li img {
+  height: 30px;
+  width: 30px;
+}
+#center {
+  text-align: center;
+  background-color: #acacac;
+  height: 30px;
+  color: #162233;
+}
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  #navbar {
+    display: none;
+  }
+  #feature {
+    flex-direction: column;
+  }
+  .fe-box {
+    width: 50vw;
+    margin-bottom: 30px;
+  }
+  .pro-container {
+    grid-template-columns: repeat(2, 250px);
+  }
+  #sm-banner {
+    grid-template-columns: repeat(1, 90vw);
+    
+  }
+}
+@media (max-width: 600px) {
+  .pro-container {
+    grid-template-columns: repeat(1, 250px);
+  }
+  #footer {
+    flex-direction: column;
+  }
+}
+/* @media (max-width:992px) {
+  .pro-container {
+    grid-template-columns: repeat(3, 250px);
+  }
+} */
+@media screen and (min-width: 868px) and (max-width: 1200px) {
+  .pro-container {
+    grid-template-columns: repeat(3, 250px);
+  }
 }
